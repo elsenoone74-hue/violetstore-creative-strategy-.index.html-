@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Store - Creative Strategy</title>
+    <!-- Google Fonts: Cairo for Arabic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config for Custom Colors and Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        violet: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* Custom scrollbar for aesthetic appeal */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a78bfa; 
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7c3aed; 
+        }
+        .gradient-text {
+            background: linear-gradient(to left, #7c3aed, #db2777);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-violet-200 selection:text-violet-900">
+
+    <!-- Navigation / Header -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-violet-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-violet-200">
+                        V
+                    </div>
+                    <span class="font-bold text-2xl text-slate-800 tracking-tight">Violet<span class="text-violet-600">Store</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="#icp" class="text-slate-600 hover:text-violet-600 font-semibold transition-colors">ملف العميل (ICP)</a>
+                    <a href="#filters" class="text-slate-600 hover:text-violet-600 font-semibold transition-colors">الفلاتر الـ 5</a>
+                    <a href="#angles" class="text-slate-600 hover:text-violet-600 font-semibold transition-colors">الزوايا الإعلانية</a>
+                    <a href="#vcc" class="text-slate-600 hover:text-violet-600 font-semibold transition-colors">نموذج VCC</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-violet-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-violet-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-fuchsia-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-violet-800/50 border border-violet-400/30 text-violet-200 text-sm font-semibold tracking-wider mb-4">وثيقة الإدارة الإبداعية</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">الاستراتيجية الإبداعية الشاملة<br> لبراند <span class="text-violet-400">Violet Store</span></h1>
+            <p class="mt-4 text-xl text-violet-100 max-w-3xl mx-auto font-light leading-relaxed">
+                تحليل عميق لدوافع الشراء، بناء شخصية العميل المثالي، استخراج الاحتياجات الخفية، وصياغة زوايا إعلانية مبنية على نموذج VCC لضمان أعلى معدلات التحويل.
+            </p>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+
+        <!-- Part 1: ICP (7Ws) -->
+        <section id="icp" class="scroll-mt-24">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4 inline-block relative">
+                    1. ملف العميل المثالي (ICP) - نموذج 7Ws
+                    <div class="absolute -bottom-2 left-0 right-0 h-1 bg-violet-500 rounded-full"></div>
+                </h2>
+                <p class="text-slate-500 max-w-2xl mx-auto mt-4 text-lg">بناءً على تحليل دقيق لمراجعات العملاء الحقيقية لبراند فايولت والمنافسين.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Who -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-violet-500"></div>
+                    <div class="w-12 h-12 bg-violet-100 text-violet-600 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Who (من هي؟)</h3>
+                    <ul class="space-y-2 text-slate-600 leading-relaxed text-sm">
+                        <li><strong class="text-violet-700">الديموغرافيا:</strong> شابات وسيدات مصريات محجبات ومنتقبات (18 - 35 عاماً). يتوزعن في القاهرة، الإسكندرية، والصعيد.</li>
+                        <li><strong class="text-violet-700">النمط الحياتي:</strong> طالبات جامعة، خريجات حديثات، وعاملات بنمط حياة سريع.</li>
+                        <li><strong class="text-violet-700">الاهتمامات:</strong> "الاحتشام الأنيق"، ملتزمات بالزي الشرعي ويرفضن التنازل عن الشياكة وتنسيق الألوان.</li>
+                    </ul>
+                </div>
+
+                <!-- Where -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-blue-500"></div>
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Where (أين تتواجد؟)</h3>
+                    <ul class="space-y-2 text-slate-600 leading-relaxed text-sm">
+                        <li><strong class="text-blue-700">رقمياً:</strong> Instagram و Facebook. يتابعن الـ Stories بشغف، يتأثرن بصور العملاء (UGC)، ويفضلن الطلب عبر WhatsApp.</li>
+                        <li><strong class="text-blue-700">في الواقع:</strong> الجامعات، أماكن العمل، والمناسبات العائلية. يبحثن عن لفت الانتباه الإيجابي لحشمتهن.</li>
+                    </ul>
+                </div>
+
+                <!-- What -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">What (ماذا تشتري؟)</h3>
+                    <ul class="space-y-2 text-slate-600 leading-relaxed text-sm">
+                        <li>الملابس التي توفر "الفوليوم" والوسع (جيبات كلوش بليسيه، دريسات واسعة، سوت).</li>
+                        <li><strong>حلول عملية:</strong> مثل "البندانة/البونيه" التي ترفع الخمار بدعامة ممتازة ولا تسبب صداعاً.</li>
+                    </ul>
+                </div>
+
+                <!-- Why -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-rose-500"></div>
+                    <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Why (لماذا تشتري؟)</h3>
+                    <ul class="space-y-2 text-slate-600 leading-relaxed text-sm">
+                        <li><strong class="text-rose-700">دافع نفسي:</strong> الرضا عن النفس دينياً وشكلياً (الاحتشام بلا بهدلة)، والبحث عن التقدير.</li>
+                        <li><strong class="text-rose-700">دافع عملي:</strong> الراحة، خامات لا تلزق ولا تشف، ولا تحتاج للكي المستمر.</li>
+                    </ul>
+                </div>
+
+                <!-- When -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-amber-500"></div>
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">When (متى تشتري؟)</h3>
+                    <ul class="space-y-2 text-slate-600 leading-relaxed text-sm">
+                        <li><strong class="text-amber-700">مواسمياً:</strong> الأعياد (EIDFeedback)، بداية الصيف والشتاء، وبداية الدراسة.</li>
+                        <li><strong class="text-amber-700">نفسياً:</strong> عند الشعور بالضيق من الملابس الحالية المزعجة. عند إيجاد القطعة المريحة تشتري بكميات (Stocking up).</li>
+                    </ul>
+                </div>
+
+                <!-- Objections -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-red-500"></div>
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Objections (المخاوف)</h3>
+                    <ul class="space-y-2 text-slate-600 leading-relaxed text-sm">
+                        <li>أزمة الثقة في الأونلاين (الحاجز الأكبر).</li>
+                        <li>المقاس والطول (الخوف من الضيق والقصر).</li>
+                        <li>الخامة (الخوف من الشفافية والالتصاق).</li>
+                        <li>معاملة خدمة العملاء والمندوب. إذا زال الخوف، يزول اعتراض السعر فوراً.</li>
+                    </ul>
+                </div>
+
+                <!-- Dream Outcome -->
+                <div class="bg-gradient-to-br from-violet-600 to-fuchsia-600 rounded-2xl p-8 shadow-lg text-white md:col-span-2 lg:col-span-3 transform transition hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-xl mb-4 backdrop-blur-sm">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Dream Outcome (النتيجة الحالمة)</h3>
+                    <p class="text-violet-100 leading-relaxed text-lg">
+                        التحول من فتاة تشعر بصعوبة في إيجاد لبس شرعي شيك، إلى فتاة تشعر وكأنها <strong class="text-white">"أميرة"</strong> أو <strong class="text-white">"فراشة"</strong>. تبحث عن "راحة البال" وأن يكون لديها "البراند الموثوق" (Go-to Brand) الذي تطلب منه وهي مغمضة العينين لتوفر على نفسها عناء التجارب الفاشلة.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 2: 5 Filters Analysis -->
+        <section id="filters" class="scroll-mt-24">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4 inline-block relative">
+                    2. تحليل الفلاتر الخمسة (The 5 Filters)
+                    <div class="absolute -bottom-2 left-0 right-0 h-1 bg-fuchsia-500 rounded-full"></div>
+                </h2>
+                <p class="text-slate-500 max-w-2xl mx-auto mt-4 text-lg">غوص أعمق في سيكولوجية العميلة لدوافع الشراء.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div class="bg-white p-6 rounded-2xl border-t-4 border-slate-800 shadow-sm">
+                    <div class="text-slate-800 mb-2"><i class="fa-solid fa-bullseye text-2xl"></i></div>
+                    <h4 class="font-bold text-lg mb-2">1. العميل المستهدف</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">فتاة/سيدة عملية ذوقها راقٍ، تقضي وقتاً طويلاً تبحث عن الإلهام، عانت مسبقاً من تجارب شراء فاشلة للملابس الشرعية.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border-t-4 border-blue-500 shadow-sm">
+                    <div class="text-blue-500 mb-2"><i class="fa-solid fa-gears text-2xl"></i></div>
+                    <h4 class="font-bold text-lg mb-2">2. الاحتياج الوظيفي</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">ملابس تستر الجسم بالكامل (فضفاضة، لا تشف). خامات لا تحتاج لكي مستمر، وبندانات تثبت الحجاب بلا ألم.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border-t-4 border-rose-500 shadow-sm">
+                    <div class="text-rose-500 mb-2"><i class="fa-solid fa-face-smile text-2xl"></i></div>
+                    <h4 class="font-bold text-lg mb-2">3. الاحتياج العاطفي</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">الشعور بـ "الثقة المريحة". الرغبة في الأناقة والرقة والاطمئنان والسلام النفسي من قلق المظهر.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border-t-4 border-emerald-500 shadow-sm">
+                    <div class="text-emerald-500 mb-2"><i class="fa-solid fa-users text-2xl"></i></div>
+                    <h4 class="font-bold text-lg mb-2">4. الاحتياج الاجتماعي</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">أن تُرى كفتاة "شيك ومحترمة". تبحث عن إعجاب الدائرة المحيطة ("كل اللي شافني سألني جايباه منين").</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border-t-4 border-violet-500 shadow-sm">
+                    <div class="text-violet-500 mb-2"><i class="fa-solid fa-fingerprint text-2xl"></i></div>
+                    <h4 class="font-bold text-lg mb-2">5. احتياج الهوية</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">"الفتاة الملتزمة العصرية". كسر الصورة النمطية التي تربط اللبس الفضفاض بالبهدلة. أيقونة في الأناقة والترتيب.</p>
+                </div>
+            </div>
+
+            <!-- Hidden Needs (The Secret Drivers) -->
+            <div class="mt-12 bg-slate-900 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <!-- Background decorations -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-violet-600 rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-fuchsia-600 rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
+                
+                <div class="relative z-10">
+                    <div class="flex items-center gap-4 mb-8">
+                        <i class="fa-solid fa-user-secret text-4xl text-violet-400"></i>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white">الاحتياجات الخفية (Hidden Needs)</h3>
+                    </div>
+                    <p class="text-slate-300 mb-10 text-lg">الدوافع اللاواعية التي لا تعترف بها العميلة علناً، لكنها المحرك السري لقرار الشراء:</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-slate-800/50 backdrop-blur-md border border-slate-700 p-6 rounded-2xl">
+                            <h4 class="text-violet-300 font-bold text-xl mb-3">1. الجاذبية الآمنة</h4>
+                            <p class="text-sm text-slate-300 mb-3"><em class="text-slate-400">Guilt-Free Attractiveness</em></p>
+                            <p class="text-slate-200 leading-relaxed text-sm">ترغب في الجاذبية ومواكبة الموضة لكنها تخاف "الذنب" المجتمعي والديني. البراند يوفر لها "تصريحاً آمناً" للشياكة المطلقة تحت مظلة اللبس الشرعي، مما يرضي رغبتها دون تأنيب ضمير.</p>
+                        </div>
+                        <div class="bg-slate-800/50 backdrop-blur-md border border-slate-700 p-6 rounded-2xl">
+                            <h4 class="text-violet-300 font-bold text-xl mb-3">2. الأناقة السهلة</h4>
+                            <p class="text-sm text-slate-300 mb-3"><em class="text-slate-400">The Effortless Illusion</em></p>
+                            <p class="text-slate-200 leading-relaxed text-sm">منهكة سراً من مجهود "الطبقات" وتنسيقها. هي تشتري "توفير 20 دقيقة أمام المرآة". الدريس الجاهز والبندانة الثابتة تمنحها إحساس "صحيت لبست وبقيت قمر في 5 دقايق".</p>
+                        </div>
+                        <div class="bg-slate-800/50 backdrop-blur-md border border-slate-700 p-6 rounded-2xl">
+                            <h4 class="text-violet-300 font-bold text-xl mb-3">3. التفوق الطبقي الخفي</h4>
+                            <p class="text-sm text-slate-300 mb-3"><em class="text-slate-400">Subtle Status & Exclusivity</em></p>
+                            <p class="text-slate-200 leading-relaxed text-sm">ترغب في التميز عن "السائد والشعبي". شراء براند له اسم (Violet) باهتمام بتفاصيل التغليف والجودة يشبع رغبتها في الـ (Premium) ويمنحها شعوراً خفياً بالتفوق والرقي.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Creative Angles -->
+        <section id="angles" class="scroll-mt-24">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4 inline-block relative">
+                    3. الزوايا الإعلانية (Creative Angles)
+                    <div class="absolute -bottom-2 left-0 right-0 h-1 bg-amber-400 rounded-full"></div>
+                </h2>
+                <p class="text-slate-500 max-w-2xl mx-auto mt-4 text-lg">5 زوايا أساسية مصممة لاستهداف الاحتياجات الظاهرة والخفية.</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Angle 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row">
+                    <div class="bg-violet-600 text-white p-6 md:w-1/3 flex flex-col justify-center">
+                        <div class="text-4xl mb-4 opacity-50"><i class="fa-solid fa-stopwatch"></i></div>
+                        <h3 class="text-2xl font-bold mb-2">الأناقة السريعة بلا مجهود</h3>
+                        <p class="text-violet-200 text-sm">Zero-Effort Elegance</p>
+                    </div>
+                    <div class="p-6 md:w-2/3 space-y-4">
+                        <p><strong class="text-slate-800">الفكرة:</strong> اللعب على وتر توفير الوقت والمجهود والهروب من كثرة طبقات اللبس الشرعي.</p>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <strong class="text-violet-700 block mb-2"><i class="fa-solid fa-bullhorn ml-1"></i> الرسالة الإعلانية (Copy):</strong>
+                            <p class="text-slate-700 font-medium italic">"عشان اللبس الشرعي مش معناه طبقات كتير ومجهود كل يوم الصبح.. وفرنا عليكي الحيرة بقطعة واحدة بتديكي الفوليوم والوسع اللي بتحلمي بيه في 5 دقايق."</p>
+                        </div>
+                        <p><strong class="text-slate-800">التنفيذ (Visual):</strong> فيديو GRWM بتعليق صوتي و ASMR لحركة القماش، يبرز الانسيابية بدون موسيقى.</p>
+                    </div>
+                </div>
+
+                <!-- Angle 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row">
+                    <div class="bg-fuchsia-600 text-white p-6 md:w-1/3 flex flex-col justify-center">
+                        <div class="text-4xl mb-4 opacity-50"><i class="fa-solid fa-head-side-virus"></i></div>
+                        <h3 class="text-2xl font-bold mb-2">الحل الجذري لصداع الحجاب</h3>
+                        <p class="text-fuchsia-200 text-sm">The Pain-Free Hijab</p>
+                    </div>
+                    <div class="p-6 md:w-2/3 space-y-4">
+                        <p><strong class="text-slate-800">الفكرة:</strong> التركيز على البندانات كمنتج يحل مشكلة يومية مؤلمة (الاحتياج الوظيفي المباشر).</p>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <strong class="text-fuchsia-700 block mb-2"><i class="fa-solid fa-bullhorn ml-1"></i> الرسالة الإعلانية (Copy):</strong>
+                            <p class="text-slate-700 font-medium italic">"بتدوري على بندانة تظبط الخمار والطرحة من غير ما توجع ودانك أو تسببلك صداع؟ أخيراً بندانة بدعامة عريضة ومريحة هتنسي إنك لابساها أصلاً."</p>
+                        </div>
+                        <p><strong class="text-slate-800">التنفيذ (Visual):</strong> فيديو يوضح مشكلة الانزلاق، ثم B-roll لخامة البندانة الجديدة والدعامة العريضة بتعليق صوتي هادئ.</p>
+                    </div>
+                </div>
+
+                <!-- Angle 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row">
+                    <div class="bg-emerald-600 text-white p-6 md:w-1/3 flex flex-col justify-center">
+                        <div class="text-4xl mb-4 opacity-50"><i class="fa-solid fa-leaf"></i></div>
+                        <h3 class="text-2xl font-bold mb-2">الاحتشام الآمن</h3>
+                        <p class="text-emerald-200 text-sm">Guaranteed Modesty</p>
+                    </div>
+                    <div class="p-6 md:w-2/3 space-y-4">
+                        <p><strong class="text-slate-800">الفكرة:</strong> معالجة الخوف من خامات الأونلاين الشفافة أو التي تلتصق بالجسم (الاحتياج للاطمئنان).</p>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <strong class="text-emerald-700 block mb-2"><i class="fa-solid fa-bullhorn ml-1"></i> الرسالة الإعلانية (Copy):</strong>
+                            <p class="text-slate-700 font-medium italic">"خايفة تطلبي أونلاين وتطلعي الماتيريال بتشف أو بتلزق؟ الدريس/الجيبة دي مصممة مخصوص عشان تديكي الوسع والراحة بخامة مستحيل تحدد تفاصيل جسمك."</p>
+                        </div>
+                        <p><strong class="text-slate-800">التنفيذ (Visual):</strong> تصوير قريب (Macro) لجودة القماش وتجربة شدّه في إضاءة قوية لإثبات كثافته.</p>
+                    </div>
+                </div>
+
+                <!-- Angle 4 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row">
+                    <div class="bg-blue-600 text-white p-6 md:w-1/3 flex flex-col justify-center">
+                        <div class="text-4xl mb-4 opacity-50"><i class="fa-solid fa-star"></i></div>
+                        <h3 class="text-2xl font-bold mb-2">صائدة الإطراءات</h3>
+                        <p class="text-blue-200 text-sm">The Compliment Magnet</p>
+                    </div>
+                    <div class="p-6 md:w-2/3 space-y-4">
+                        <p><strong class="text-slate-800">الفكرة:</strong> تلبية الاحتياج الاجتماعي والظهور بمظهر "الأميرة" التي تلفت الانتباه الراقي.</p>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <strong class="text-blue-700 block mb-2"><i class="fa-solid fa-bullhorn ml-1"></i> الرسالة الإعلانية (Copy):</strong>
+                            <p class="text-slate-700 font-medium italic">"خليكي مستعدة لسؤال 'جايباه منين؟' في كل خروجة. شياكة وحشمة هيخلوكي حاسة إنك أميرة، بتفاصيل وتقفيل مفيش بعد كده."</p>
+                        </div>
+                        <p><strong class="text-slate-800">التنفيذ (Visual):</strong> دمج لقطات سريعة لآراء العملاء (UGC) مع لقطات حقيقية للمنتج ومونتاج ديناميكي سريع للتعليقات.</p>
+                    </div>
+                </div>
+
+                <!-- Angle 5 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row">
+                    <div class="bg-amber-500 text-white p-6 md:w-1/3 flex flex-col justify-center">
+                        <div class="text-4xl mb-4 opacity-50"><i class="fa-solid fa-box-open"></i></div>
+                        <h3 class="text-2xl font-bold mb-2">كسر حاجز الخوف</h3>
+                        <p class="text-amber-100 text-sm">Risk-Free Online Shopping</p>
+                    </div>
+                    <div class="p-6 md:w-2/3 space-y-4">
+                        <p><strong class="text-slate-800">الفكرة:</strong> معالجة الاعتراض الرئيسي حول الثقة، المقاسات، وخدمة العملاء.</p>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <strong class="text-amber-600 block mb-2"><i class="fa-solid fa-bullhorn ml-1"></i> الرسالة الإعلانية (Copy):</strong>
+                            <p class="text-slate-700 font-medium italic">"أكتر من مجرد أوردر بيوصلك.. إحنا بنضمنلك خامة تنافس البراندات، مقاس مظبوط، وخدمة عملاء معاكي لحد ما تتأكدي إن دي القطعة اللي بتدوري عليها."</p>
+                        </div>
+                        <p><strong class="text-slate-800">التنفيذ (Visual):</strong> فيديو Unboxing راقٍ، مع إبراز رسائل حقيقية تشيد بسرعة الشحن وسياسة الاستبدال.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 4: VCC Strategic Model -->
+        <section id="vcc" class="scroll-mt-24 mb-20">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4 inline-block relative">
+                    4. نموذج التوزيع VCC
+                    <div class="absolute -bottom-2 left-0 right-0 h-1 bg-emerald-500 rounded-full"></div>
+                </h2>
+                <p class="text-slate-500 max-w-2xl mx-auto mt-4 text-lg">توزيع الأفكار والزوايا السابقة على مسار القمع التسويقي (Funnel).</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8">
+                
+                <!-- Visibility -->
+                <div class="flex-1 bg-white border-t-8 border-violet-500 rounded-2xl shadow-md p-8 relative">
+                    <div class="absolute -top-6 right-8 w-12 h-12 bg-violet-500 text-white rounded-full flex items-center justify-center text-xl shadow-lg font-bold">V</div>
+                    <h3 class="text-2xl font-bold text-slate-800 mt-2 mb-4">Visibility<br><span class="text-lg text-slate-500 font-normal">أعمدة الظهور والانتشار</span></h3>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-violet-50 p-4 rounded-xl">
+                            <strong class="text-violet-800 block mb-1">الهدف:</strong>
+                            <p class="text-sm text-slate-700">كسر النمط البصري المعتاد، لفت الانتباه في أول 3 ثوانٍ، وتقليل تكلفة الظهور (CPM).</p>
+                        </div>
+                        <div>
+                            <strong class="text-slate-800 block mb-1">الزاوية المستخدمة:</strong>
+                            <p class="text-sm text-slate-600 font-bold">"الأناقة السريعة بلا مجهود"</p>
+                        </div>
+                        <div>
+                            <strong class="text-slate-800 block mb-1">الفكرة والتنفيذ:</strong>
+                            <p class="text-sm text-slate-600 leading-relaxed">فيديو (GRWM). يبدأ بـ Hook مفاجئ: "لسه بتضيعي نص ساعة كل يوم؟" ثم تظهر الفتاة ترتدي القطعة في ثوانٍ وتبرز الانسيابية والوسع الفوري.</p>
+                        </div>
+                        <div class="bg-slate-100 p-3 rounded-lg border border-slate-200 mt-4">
+                            <strong class="text-slate-700 text-sm block mb-1"><i class="fa-solid fa-mobile-screen ml-1"></i> الفورمات:</strong>
+                            <p class="text-xs text-slate-500">فيديو طولي (Reels/TikTok) إيقاع سريع، Voiceover، مؤثرات طبيعية (ASMR)، بدون موسيقى.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credibility -->
+                <div class="flex-1 bg-white border-t-8 border-fuchsia-500 rounded-2xl shadow-md p-8 relative">
+                    <div class="absolute -top-6 right-8 w-12 h-12 bg-fuchsia-500 text-white rounded-full flex items-center justify-center text-xl shadow-lg font-bold">C</div>
+                    <h3 class="text-2xl font-bold text-slate-800 mt-2 mb-4">Credibility<br><span class="text-lg text-slate-500 font-normal">أعمدة المصداقية والثقة</span></h3>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-fuchsia-50 p-4 rounded-xl">
+                            <strong class="text-fuchsia-800 block mb-1">الهدف:</strong>
+                            <p class="text-sm text-slate-700">بناء الثقة، رفع القيمة الذهنية للمنتج، وتبديد المخاوف من جودة الأونلاين.</p>
+                        </div>
+                        <div>
+                            <strong class="text-slate-800 block mb-1">الفكرة 1 (UGC Story):</strong>
+                            <p class="text-sm text-slate-600 leading-relaxed">فيديو سيلفي لعميلة تتحدث بحماس كيف لفتت إطلالتها الأنظار كـ "صائدة الإطراءات" وكيف حلت القطعة أزمة الاحتشام والشياكة. (الفورمات: Testimonial مدعوم بسكرين شوتس).</p>
+                        </div>
+                        <div>
+                            <strong class="text-slate-800 block mb-1">الفكرة 2 (Case Study):</strong>
+                            <p class="text-sm text-slate-600 leading-relaxed">تطبيق "الاحتشام الآمن". فيديو Unboxing يركز على التغليف، ثم Macro shots لشد القماش وإثبات أنه لا يشف. (الفورمات: Aesthetic Unboxing مع تعليق صوتي).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conversion -->
+                <div class="flex-1 bg-white border-t-8 border-emerald-500 rounded-2xl shadow-md p-8 relative">
+                    <div class="absolute -top-6 right-8 w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xl shadow-lg font-bold">C</div>
+                    <h3 class="text-2xl font-bold text-slate-800 mt-2 mb-4">Conversion<br><span class="text-lg text-slate-500 font-normal">أعمدة التحويل المباشر</span></h3>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-emerald-50 p-4 rounded-xl">
+                            <strong class="text-emerald-800 block mb-1">الهدف:</strong>
+                            <p class="text-sm text-slate-700">إغلاق الصفقة فوراً، وتقديم مبرر منطقي لحث العقل الواعي على الشراء دون تأجيل.</p>
+                        </div>
+                        <div>
+                            <strong class="text-slate-800 block mb-1">الفكرة 1 (المقارنة الصريحة):</strong>
+                            <p class="text-sm text-slate-600 leading-relaxed">مقارنة بين "بندانة السوق المزعجة" و "بندانة Violet المريحة". (الفورمات: Split Screen Image/Video مع عرض سعري لشراء باكدج الألوان الأساسية).</p>
+                        </div>
+                        <div>
+                            <strong class="text-slate-800 block mb-1">الفكرة 2 (عروض وحل المشكلة):</strong>
+                            <p class="text-sm text-slate-600 leading-relaxed">عرض قطعة مميزة (جيبة بليسيه) وتسليط الضوء على حل المشكلة (لا تكوى، مقاس مضبوط). (الفورمات: Carousel Ads تعرض الألوان، السعر، وزر الطلب وتطمين الدفع عند الاستلام).</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-200 text-xl mx-auto mb-4">
+                V
+            </div>
+            <p class="mb-2">Creative Direction Strategy Document - Violet Store</p>
+            <p class="text-sm">Confidential & Proprietary &copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
